@@ -15,9 +15,39 @@ class MyApp extends StatelessWidget {
             useMaterial3: true, appBarTheme: AppBarTheme(color: Colors.yellow)),
         home: Scaffold(
           appBar: AppBar(
-            title: Text('Appbar title'),
+            centerTitle: true,
+            title:Image.asset('assets/image/honda_logo.png',width: 70,),
+
+
+            // leading: IconButton(onPressed: () {debugPrint('Testiconmenu');}, icon: const Icon(Icons.menu)),
+            // actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.flag_sharp)),
+            //           IconButton(onPressed: () {}, icon: const Icon(Icons.settings))
+            // ],
           ),
-          body: Text('Test'),
+          body: Column(
+            children: [
+              Image.asset('assets/image/honda.jpg'),
+              Text('ขอบคุณที่ใช้บริการ',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
+              Text('เรายินที่ได้ใช้บิรการกับเรา Honda\n\n',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
+
+              Row(children: [Text('สรุปรายละเอียดการสั่งซื้อ',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold))],),
+              Row(children: [IconButton(onPressed: () {}, icon: const Icon(Icons.calendar_month)),
+                Text('วันที่รับรถ                                9/12/2567',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold))
+                ],
+              ),
+              Row(children: [IconButton(onPressed: () {}, icon: const Icon(Icons.place)),
+                Text('สถานที่รับรถ                   สยามพารากอน',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold))
+                ],
+              ),
+              // Row(
+              //   children: [
+              //     ElevatedButton(onPressed: () {debugPrint('Eiei');}, child: Text('SUBMIT')),
+              //     IconButton(onPressed: () {}, icon: Icon(Icons.favorite),iconSize: 40,),
+              //   ],
+              // ),
+            ],
+          ),
+          floatingActionButton: FloatingActionButton(onPressed: () {debugPrint('Test');},child: const Icon(Icons.shopping_bag_outlined),),
         ));
   }
 }
