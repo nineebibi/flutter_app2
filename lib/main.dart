@@ -32,11 +32,23 @@ class MyApp extends StatelessWidget {
 
               Row(children: [Text('สรุปรายละเอียดการสั่งซื้อ',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold))],),
               Row(children: [IconButton(onPressed: () {}, icon: const Icon(Icons.calendar_month)),
-                Text('วันที่รับรถ                                9/12/2567',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold))
+                Text('วันที่รับรถ',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
+                Spacer(),Text('15/12/2567',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
                 ],
               ),
               Row(children: [IconButton(onPressed: () {}, icon: const Icon(Icons.place)),
-                Text('สถานที่รับรถ                   สยามพารากอน',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold))
+                Text('สถานที่รับรถ',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
+                Spacer(),Text('สยามพารากอน',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
+                ],
+              ),
+              Row(children: [IconButton(onPressed: () {}, icon: const Icon(Icons.price_change_sharp)),
+                Text('เงินมัดจำที่ต้องจ่าย',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
+                Spacer(),Text('500,000 บาท',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
+                ],
+              ),
+              Row(children: [IconButton(onPressed: () {}, icon: const Icon(Icons.car_rental)),
+                Text('รุ่นของรถยนต์',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
+                Spacer(),Text('Honda Civic RS 2024',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
                 ],
               ),
               // Row(
