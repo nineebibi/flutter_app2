@@ -29,27 +29,26 @@ class _DetailState extends State<Detail> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Image.asset('assets/image/ev.jpg'),
-            Card(
-              child: Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Column(
-                        children: [
-                          IconButton(onPressed: () {}, icon: const Icon(Icons.battery_charging_full_rounded)),
-                          Text(
-                            'Current SOC',
-                            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                          ),
-
-                        ],
-                      )
-                    ],
-                  ),
-                ],
-              ),
-            ),
+            // Card(
+            //   child: Column(
+            //     children: [
+            //       Row(
+            //         mainAxisAlignment: MainAxisAlignment.center,
+            //         children: [
+            //           Column(
+            //             children: [
+            //               IconButton(onPressed: () {}, icon: const Icon(Icons.battery_charging_full_rounded)),
+            //               Text(
+            //                 'Current SOC',
+            //                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            //               ),
+            //             ],
+            //           )
+            //         ],
+            //       ),
+            //     ],
+            //   ),
+            // ),
             Card(
               child: Column(
                 children: [
