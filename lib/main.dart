@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app2/Detail.dart';
+import 'package:flutter_app2/Listviw.dart';
 import 'package:flutter_app2/home.dart';
 import 'package:flutter_app2/welcomepage.dart';
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         //   '/':(context) => welcomepage(),
         //   '/detail': (context) => Detail(),
         // },
-        home: welcomepage(),
+        home: homepage(),
     );
   }
 }
