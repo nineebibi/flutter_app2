@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app2/Detail.dart';
 import 'package:flutter_app2/Listviw.dart';
+import 'package:flutter_app2/detail_page.dart';
 import 'package:flutter_app2/home.dart';
+import 'package:flutter_app2/my_listpage.dart';
 import 'package:flutter_app2/welcomepage.dart';
 
 void main() {
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
         //   '/':(context) => welcomepage(),
         //   '/detail': (context) => Detail(),
         // },
-        home: homepage(),
+        home: MyListPage(),
     );
   }
 }
