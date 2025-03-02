@@ -10,7 +10,6 @@ class eiei extends StatefulWidget {
 }
 
 class _MyWidgetState extends State<eiei> {
-
   final List<String> testeiei = <String>[
     'test1',
     'test2',
@@ -21,37 +20,17 @@ class _MyWidgetState extends State<eiei> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: Text('Myapp'),
-      ),
-       body: ListView.separated(
-        itemCount: testeiei.length,
-        itemBuilder: (context,index)=>ListTile(
-          title: Text(
-            testeiei[index],
-            
-          ),
+        appBar: AppBar(
+          leading: Text('Myapp'),
         ),
-        separatorBuilder: (context, int index) => const MyFutureBuilderPage(),
-       )
-      // ListView(
-      //   children: [
-      //     ListTile(
-      //       title: Text('test'),
-      //       leading: Icon(Icons.person),
-      //       subtitle: Text('View/Edit your profile'),
-      //       trailing: Icon(Icons.arrow_forward_ios),
-      //       tileColor: Colors.green,
-      //       onTap: () => Navigator.push(context,MaterialPageRoute(builder: (context)=>displaypage())),
-      //     ),
-      //     ListTile(
-      //       title: Text('test1'),
-      //     ),
-      //     ListTile(
-      //       title: Text('test2'),
-      //     ),
-      //   ],
-      // ),
-    );
+        body: ListView.separated(
+          itemCount: testeiei.length,
+          itemBuilder: (context, index) => ListTile(
+            title: Text(
+              testeiei[index],
+            ),
+          ),
+          separatorBuilder: (context, int index) => const MyFutureBuilderPage(),
+        ));
   }
 }

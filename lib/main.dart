@@ -16,15 +16,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-            useMaterial3: true, appBarTheme: AppBarTheme(color: Colors.blue)),
-        // initialRoute: '/',
-        // routes: {
-        //   '/':(context) => welcomepage(),
-        //   '/detail': (context) => Detail(),
-        // },
-        home: MyListPage(),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+        appBarTheme: AppBarTheme(color: Colors.blue),
+      ),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => welcomepage(),
+        '/detail': (context) => Detail(),
+        '/listview': (context) => eiei(),
+        '/home': (context) => homepage(),
+      },
+      // home: MyListPage(),
     );
   }
 }
